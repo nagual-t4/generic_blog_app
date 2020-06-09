@@ -1,11 +1,12 @@
-/*============= RESETS =============  */
+/*============= RESETS =============*/
 
 /*-- iPhone X Remove Gutters --*/
 html {
   padding: env(safe-area-inset);
 }
 /*-- Prevent Horizontal Scrolling & Font Style --*/
-html, body {
+html,
+body {
   overflow-x: hidden;
   font-family: "Lato", sans-serif, "Kosugi Maru", sans-serif;
   color: #505962;
@@ -15,8 +16,17 @@ html, body {
 }
 
 /*--- Nav Scrolling Offset --*/
+.offset:before {
+  content: "";
+  height: 4rem;
+  display: block;
+  margin-top: -4rem;
+}
 
 /*--- Extra Bootstrap Column Padding --*/
+[class*"col-"] {
+  padding: 1rem;
+}
 
 /*============= NAVIGATION =============*/
 .navbar-brand {
@@ -29,14 +39,14 @@ html, body {
   font-weight: 700;
   letter-spacing: 0.1rem;
   font-size: 0.9rem;
-  transition: background-color .5s ease;
+  transition: background-color 0.5s ease;
 }
 .navbar-nav li {
   padding-right: 0.8rem;
 }
 .navbar-nav .nav-link {
   color: white;
-  padding-top: 1rem;
+  padding-top: 0.8rem;
 }
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link:hover {
@@ -46,24 +56,26 @@ html, body {
   color: white;
   font-size: 1.6rem;
 }
-.navbar.solid {
-  background: rgba(0, 0, 0, 0.7)!important;
-  transition: background-color .1s ease;
-}
+.navbar.solid,
 .navbar.solid-toggle {
-  background: rgba(0, 0, 0, 0.7)!important;
-  transition: background-color .1s ease;
+  background: rgba(0, 0, 0, 0.7) !important;
+  transition: background-color 1s ease;
 }
 
 /*-- Remove Button Outline --*/
-button:focus, a:focus {
+button:focus,
+a:focus,
+a.btn:focus {
   outline: 0;
   -webkit-appearance: none;
   box-shadow: none;
-  transition: all .6s ease;
+  transition: all 0.6s ease;
 }
-button, a, a.btn {
-  transition: all .6s ease;
+button,
+a,
+a.btn,
+.svg-inline--fa {
+  transition: all 0.6s ease;
 }
 
 /*============= LANDING PAGE =============*/
@@ -81,9 +93,11 @@ button, a, a.btn {
   position: absolute;
   height: 100%;
   width: 100%;
+  top: 0;
+  left: 0;
 }
 .home-inner {
-  background-image: url('../img/computers.jpg');
+  background-image: url("../img/computers.jpg");
   position: fixed;
   height: 100%;
   width: 100%;
@@ -92,54 +106,104 @@ button, a, a.btn {
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   will-change: transform;
-  /* display: table; */
+  display: table;
 }
 
-/*-- Landing Page Caption --*/
+/* -- Landing Page Caption -- */
 .caption {
   z-index: 1;
   position: absolute;
-  top: 20%:
+  top: 38%;
+  width: 100%;
+  max-width: 100%;
+}
+.caption h1 {
+  font-size: 3.5rem;
+  letter-spacing: 0.1rem;
+  text-shadow: 0.1rem 0.1rem 0.8rem black;
+  padding-bottom: 1rem;
+}
+.caption h3 {
+  font-size: 2.2rem;
+  text-shadow: 0.1rem 0.1rem 0.5rem black;
+  padding-bottom: 2rem;
+}
+.caption .btn-lg {
+  border-width: medium;
+  padding: 0.3rem 1rem;
+  font-size: 1.5rem;
 }
 
-/*-- Bouncing Down Arrow --*/
-
-
-
-.blog_area {
-    padding: 70px;
+/* Bouncing Down Arrow */
+.arrow {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+}
+.down-arrow .svg-inline--fa {
+  color: white;
+  font-size: 2.2rem;
+  opacity: 0.3;
+}
+.down-arrow .svg-inline--fa:hover {
+  opacity: 0.8;
 }
 
-/*
-
-.navbar {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    border: 0;
-    border-radius: 0;
-    margin-bottom: 0;
-    font-size: 12px;
-    letter-spacing: 5px;
-}
-.navbar-nav  li a:hover {
-    color: #1abc9c !important;
+/*============= FEATURES SECTION =============*/
+.btn-sm {
+  border-width: medium;
+  border-radius: 0;
+  padding: 0.5rem 1.1rem;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  margin: 1rem;
 }
 
-.footer-padding {
-	padding-bottom: 60px;
+.btn-nuno {
+  background-color: #a38eff;
+  color: white;
+}
+.btn-nuno:hover {
+  background-color: #8674d3;
+  color: white;
+}
+h3.heading {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.9rem;
+  text-align: center;#a38eff
+  margin-bottom: 1.9rem;
+}
+.heading-underline {
+  width: 3rem;
+  height: 0.2rem;
+  background-color: #a38eff;
+  margin: 0 auto 2rem;
+}
+.feature span {
+  color: #a38eff;
+  margin-bottom: 0.6rem;
+}
+.feature h3 {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  padding-bottom: .4rem;
 }
 
-.footer {
-	position: absolute;
-	text-align: center;
-	bottom: 0;
-	width: 100%;
-	height: 60px;
-	background-color: #1abc9c;
+#blog .blog{
+  background-color: white;
 }
 
-.footer p {
-	margin-top: 25px;
-	font-size: 12px;
-  color: #fff;
-} */
+#portfolio {
+  width: 100%;
+  height: 30rem;
+  background-color: #d4f3ef;
+}
+
+#pricing {
+  width: 100%;
+  height: 30rem;
+  background-color: #f0e3ff;
+}
