@@ -1,297 +1,438 @@
 <!DOCTYPE html>
 <html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>T4&AmbitiousFellows_Gate</title>
+    <link rel="shortcut icon" href="" />
+    <!-- Bootstrap CSS https://getbootstrap.com/docs/4.3/getting-started/introduction/ -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!-- Style.css -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- Plugins.css -->
+    <link rel="stylesheet" href="css/plugins.css" />
+    <!-- Google Fonts https://fonts.google.com/ -->
 
-  <title>T4&AmbitiousFellows_Gate</title>
-  <link rel="shortcut icon" href="" />
-  <!-- Bootstrap CSS https://getbootstrap.com/docs/4.3/getting-started/introduction/ -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-  <!-- Style.css -->
-  <link rel="stylesheet" href="css/styles.css" />
-  <!-- Plugins.css -->
-  <link rel="stylesheet" href="css/plugins.css" />
-  <!-- Google Fonts https://fonts.google.com/ -->
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet" />
-  <!-- Animate.css https://cdnjs.com/libraries/animate.css/
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Animate.css https://cdnjs.com/libraries/animate.css/
 		https://daneden.github.io/animate.css/ -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
-  <!-- Lightbox Image Gallery https://cdnjs.com/libraries/lightbox2  https://lokeshdhakar.com/projects/lightbox2/ -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" />
-  <!-- Owl Carousel https://cdnjs.com/libraries/OwlCarousel2
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
+    <!-- Lightbox Image Gallery https://cdnjs.com/libraries/lightbox2  https://lokeshdhakar.com/projects/lightbox2/ -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css"
+    />
+    <!-- Owl Carousel https://cdnjs.com/libraries/OwlCarousel2
 		http://owlcarousel2.github.io/OwlCarousel2/ -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
-  <!-- jQuery https://code.jquery.com/ -->
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <!-- Bootstrap JS https://getbootstrap.com/docs/4.3/getting-started/introduction/ -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <!-- jQuery https://code.jquery.com/ -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap JS https://getbootstrap.com/docs/4.3/getting-started/introduction/ -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-</head>
+  <body data-spy="scroll" data-target="#navbarResponsive">
+    <!-- Start Home Section -->
+    <div id="home">
+      <!-- Navigation -->
+      <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+          <a href="#home" class="navbar-brand">
+            <font color="#a38eff">T4&AmbitiousFellows</font
+            ><img src="" alt="" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarResponsive"
+          >
+            <span class="custom-toggler-icon"><i class="fas fa-bars"></i></span>
+          </button>
 
-<body data-spy="scroll" data-target="#navbarResponsive">
-  <!-- Start Home Section -->
-  <div id="home">
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg fixed-top">
-      <div class="container-fluid">
-        <a href="#home" class="navbar-brand">
-          <font color="#a38eff">T4&AmbitiousFellows</font><img src="" alt="" />
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-          <span class="custom-toggler-icon"><i class="fas fa-bars"></i></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a href="#home" class="nav-link">Home</a>
-            </li>
-            <li class="nav-item">
-              <a href="#features" class="nav-link">Features</a>
-            </li>
-            <li class="nav-item">
-              <a href="#blog" class="nav-link">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a href="#portfolio" class="nav-link">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a href="#pricing" class="nav-link">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a href="#team" class="nav-link">Team</a>
-            </li>
-            <li class="nav-item">
-              <a href="#skills" class="nav-link">Skills</a>
-            </li>
-            <li class="nav-item">
-              <a href="#clients" class="nav-link">Clients</a>
-            </li>
-            <li class="nav-item">
-              <a href="#contact" class="nav-link">Contact</a>
-            </li>
-          </ul>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a href="#home" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="#features" class="nav-link">Features</a>
+              </li>
+              <li class="nav-item">
+                <a href="#blog" class="nav-link">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a href="#portfolio" class="nav-link">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a href="#pricing" class="nav-link">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a href="#team" class="nav-link">Team</a>
+              </li>
+              <li class="nav-item">
+                <a href="#skills" class="nav-link">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a href="#clients" class="nav-link">Clients</a>
+              </li>
+              <li class="nav-item">
+                <a href="#contact" class="nav-link">Contact</a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </nav>
+      <!-- End of navigation -->
 
-      </div>
-    </nav>
-    <!-- End of navigation -->
-
-    <!-- Start Landing Page Image -->
-    <div class="landing">
-      <div class="home-wrap">
-        <div class="home-inner"></div>
-      </div>
-    </div>
-    <!-- End Landing Page Image -->
-
-    <!-- Start Landing Page Caption -->
-    <div class="caption text-center text-light">
-      <h1 class="font-weight-bold text-uppercase os-animation" data-animation="bounceInUp" data-delay=".6s">
-        Welcome to <span class="text-nuno">My site</span>
-        <h3 class="os-animation text-capitalize" data-animation="bounceInUp" data-delay=".8s">
-          T4&AmbitiousFellows Landing Page
-        </h3>
-        <a href="#features" class="btn btn-outline-light btn-lg rounded-0 os-animation" data-animation="fadeInUp" data-delay="1s">Get Started</a>
-      </h1>
-    </div>
-    <!-- End Landing Page Caption -->
-
-    <!-- Start Bouncing Down Arrow -->
-    <a href="#features" class="down-arrow text-center">
-      <div class="arrow d-none d-md-block">
-        <i class="fas fa-angle-down"></i>
-      </div>
-    </a>
-    <!-- End Bouncing Down Arrow -->
-
-  </div>
-  <!-- End Home Section -->
-
-  <!-- Start Features Section -->
-  <div id="features" class="offset">
-    <!-- Start Theme Heading -->
-    <div class="row text-center py-4 os-animation justify-content-center" data-animation="fadeInUp">
-      <div class="cal-11 col-md-10 col-lg-9">
-        <h1>T4&AmbitiousFellows Landing Page</h1>
-        <p class="lead">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam atque
-          pariatur blanditiis nostrum cumque odio quasi, harum iusto sit unde
-          labore libero dolor cupiditate architecto? Saepe, quisquam
-          quibusdam? Magnam, architecto!
-        </p>
-        <a href="#contact" class="btn btn-secondary btn-sm">Request A Quote</a>
-        <a href="#portfolio" class="btn btn-nuno btn-sm">See Our Portfolio</a>
-      </div>
-    </div>
-    <!-- End Theme Heading -->
-
-    <!-- Start Jumbotron -->
-    <div class="jumbotron m-0 py-5">
-      <div class="col-12 os-animation" data-animation="fadeInUp">
-        <h3 class="heading">Features</h3>
-        <div class="heading-underline">
+      <!-- Start Landing Page Image -->
+      <div class="landing">
+        <div class="home-wrap">
+          <div class="home-inner"></div>
         </div>
       </div>
-      <div class="container">
-        <div class="row text-center px-lg-4 px-xl-5">
-          <div class="col-sm-6 col-md-4 os-animation" data-animation="fadeInLeft">
-            <div class="feature px-2">
-              <span class="fa-stack fa-2x">
-                <i class="fas fa-circle fa-stack-2x"></i>
-                <i class="fas fa-mobile-alt fa-stack-1x fa-inverse"></i>
-              </span>
-              <h3>Mobile Friendly</h3>
-              <p class="lead">This site features a mobile friendly, responsive first website layout useing Bootstrap.</p>
-            </div>
-          </div>
+      <!-- End Landing Page Image -->
 
-          <div class="col-sm-6 col-md-4 os-animation" data-animation="fadeInUp">
-            <div class="feature px-2">
-              <span class="fa-stack fa-2x">
-                <i class="fas fa-circle fa-stack-2x"></i>
-                <i class="fas fa-laptop fa-stack-1x fa-inverse" data-fa-tansform="shrink-1"></i>
-              </span>
-              <h3>Full Screen Landing</h3>
-              <p class="lead">Using Bootstrap, this theme features a full screen carousel landing page.</p>
-            </div>
-          </div>
-
-          <div class="col-sm-6 col-md-4 os-animation" data-animation="fadeInRight">
-            <div class="feature px-2">
-              <span class="fa-stack fa-2x">
-                <i class="fas fa-circle fa-stack-2x"></i>
-                <i class="fas fa-play fa-stack-1x fa-inverse" data-fa-tansform="shrink-3.5 right-1"></i>
-              </span>
-              <h3>Custom Animation</h3>
-              <p class="lead">Animate.css and Way points.js allow for smooth animations scrolling down the site.</p>
-            </div>
-          </div>
-
-          <div class="col-sm-6 col-md-4 os-animation" data-animation="fadeInLeft">
-            <div class="feature px-2">
-              <span class="fa-stack fa-2x">
-                <i class="fas fa-circle fa-stack-2x"></i>
-                <i class="fas fa-angle-double-down fa-stack-1x fa-inverse"></i>
-              </span>
-              <h3>Parallax Scrolling</h3>
-              <p class="lead">Fixed background images allow the theme to have content-filled parallax scrolling sections.</p>
-            </div>
-          </div>
-
-          <div class="col-sm-6 col-md-4 os-animation" data-animation="fadeInUp">
-            <div class="feature px-2">
-              <span class="fa-stack fa-2x">
-                <i class="fas fa-circle fa-stack-2x"></i>
-                <i class="fas fa-sliders-h fa-stack-1x fa-inverse" data-fa-transform="shrink-1"></i>
-              </span>
-              <h3>Content Slider</h3>
-              <p class="lead">Owl.Carousel.js makes nabigation content sliders semless with it's content carousel navigation.</p>
-            </div>
-          </div>
-
-          <div class="col-sm-6 col-md-4 os-animation" data-animation="fadeInRight">
-            <div class="feature px-2">
-              <span class="fa-stack fa-2x">
-                <i class="fas fa-circle fa-stack-2x"></i>
-                <i class="fas fa-wpforms fa-stack-1x fa-inverse"></i>
-              </span>
-              <h3>Contact Form</h3>
-              <p class="lead">The Bootstrap HTML form will send directly to your email address using PHPMailer.php.</p>
-
-            </div>
-          </div>
-
-
-        </div>
-
+      <!-- Start Landing Page Caption -->
+      <div class="caption text-center text-light">
+        <h1
+          class="font-weight-bold text-uppercase os-animation"
+          data-animation="bounceInUp"
+          data-delay=".6s"
+        >
+          Welcome to <span class="text-nuno">My site</span>
+          <h3
+            class="os-animation text-capitalize"
+            data-animation="bounceInUp"
+            data-delay=".8s"
+          >
+            T4&AmbitiousFellows Landing Page
+          </h3>
+          <a
+            href="#features"
+            class="btn btn-outline-light btn-lg rounded-0 os-animation"
+            data-animation="fadeInUp"
+            data-delay="1s"
+            >Get Started</a
+          >
+        </h1>
       </div>
+      <!-- End Landing Page Caption -->
 
+      <!-- Start Bouncing Down Arrow -->
+      <a href="#features" class="down-arrow text-center">
+        <div class="arrow d-none d-md-block">
+          <i class="fas fa-angle-down"></i>
+        </div>
+      </a>
+      <!-- End Bouncing Down Arrow -->
     </div>
+    <!-- End Home Section -->
 
-    <!-- End Jumbotron -->
-  </div>
-  <!-- End of Features Section -->
-
-  <!-- Start Blog Section -->
-  <div id="blog" class="offset">
-    <div class="row">
-      <div class="jumbotron blog m-0">
-        <div class="col-12 os-animation animated fadeInUP" data-animation="fadeInUp">
-          <h3 class="heading">Blog Section</h3>
-          <div class="heading-underline">
-          </div>
-          <p> <%= startingContent %> </p>
-
-          <% posts.forEach(function(post){ %>
-          <h3> <%= post.title %> </h3>
-          <p> <%= post.content.substring(0, 100) + "..." %>
-            <a href="/posts/<%= post.title %>">Read More</a>
+    <!-- Start Features Section -->
+    <div id="features" class="offset">
+      <!-- Start Theme Heading -->
+      <div
+        class="row text-center py-4 os-animation justify-content-center"
+        data-animation="fadeInUp"
+      >
+        <div class="cal-11 col-md-10 col-lg-9">
+          <h1>T4&AmbitiousFellows Landing Page</h1>
+          <p class="lead">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam atque
+            pariatur blanditiis nostrum cumque odio quasi, harum iusto sit unde
+            labore libero dolor cupiditate architecto? Saepe, quisquam
+            quibusdam? Magnam, architecto!
           </p>
-          <% }); %>
+          <a href="#contact" class="btn btn-secondary btn-sm"
+            >Request A Quote</a
+          >
+          <a href="#portfolio" class="btn btn-nuno btn-sm">See Our Portfolio</a>
+        </div>
+      </div>
+      <!-- End Theme Heading -->
+
+      <!-- Start Jumbotron -->
+      <div class="jumbotron m-0 py-5">
+        <div class="col-12 os-animation" data-animation="fadeInUp">
+          <h3 class="heading">Features</h3>
+          <div class="heading-underline"></div>
+        </div>
+        <div class="container">
+          <div class="row text-center px-lg-4 px-xl-5">
+            <div
+              class="col-sm-6 col-md-4 os-animation"
+              data-animation="fadeInLeft"
+            >
+              <div class="feature px-2">
+                <span class="fa-stack fa-2x">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fas fa-list fa-stack-1x fa-inverse"></i>
+                </span>
+                <h3>イントロダクション</h3>
+                <p class="lead">
+                  まずこのセクションをクリック。<br />
+                  このサイトの概要説明。どのようにこのサイトを活用していくか考えてみよう
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-sm-6 col-md-4 os-animation"
+              data-animation="fadeInUp"
+            >
+              <div class="feature px-2">
+                <span class="fa-stack fa-2x">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i
+                    class="fas fa-tv fa-stack-1x fa-inverse"
+                    data-fa-tansform="shrink-1"
+                  ></i>
+                </span>
+                <h3>動画で解説</h3>
+                <p class="lead">
+                  動画セクション<br />
+                  苦手な項目は、動画を使って学習しよう。きっと理解が深まるよ
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-sm-6 col-md-4 os-animation"
+              data-animation="fadeInRight"
+            >
+              <div class="feature px-2">
+                <span class="fa-stack fa-2x">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i
+                    class="fas fa-play fa-stack-1x fa-inverse"
+                    data-fa-tansform="shrink-3.5 right-1"
+                  ></i>
+                </span>
+                <h3>Custom Animation</h3>
+                <p class="lead">
+                  Animate.css and Way points.js allow for smooth animations
+                  scrolling down the site.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-sm-6 col-md-4 os-animation"
+              data-animation="fadeInLeft"
+            >
+              <div class="feature px-2">
+                <span class="fa-stack fa-2x">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i
+                    class="fas fa-angle-double-down fa-stack-1x fa-inverse"
+                  ></i>
+                </span>
+                <h3>Parallax Scrolling</h3>
+                <p class="lead">
+                  Fixed background images allow the theme to have content-filled
+                  parallax scrolling sections.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-sm-6 col-md-4 os-animation"
+              data-animation="fadeInUp"
+            >
+              <div class="feature px-2">
+                <span class="fa-stack fa-2x">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i
+                    class="fas fa-sliders-h fa-stack-1x fa-inverse"
+                    data-fa-transform="shrink-1"
+                  ></i>
+                </span>
+                <h3>Content Slider</h3>
+                <p class="lead">
+                  Owl.Carousel.js makes nabigation content sliders semless with
+                  it's content carousel navigation.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-sm-6 col-md-4 os-animation"
+              data-animation="fadeInRight"
+            >
+              <div class="feature px-2">
+                <span class="fa-stack fa-2x">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fas fa-wpforms fa-stack-1x fa-inverse"></i>
+                </span>
+                <h3>Contact Form</h3>
+                <p class="lead">
+                  The Bootstrap HTML form will send directly to your email
+                  address using PHPMailer.php.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Jumbotron -->
+
+      <!-- Start Fixed BG IMG Dark-->
+      <div class="fixed">
+        <div class="row dark text-light text-center">
+          <div class="col-12 os-animation" data-animation="fadeInUp">
+            <h3 class="heading">Built With Care</h3>
+            <div class="heading-underline"></div>
+          </div>
+          <div class="col-md-4 os-animation" data-animation="fadeInLeft">
+            <h1>HTML 5</h1>
+            <div class="feature py-2">
+              <span class="fa-layers fa-3x">
+                <i class="fab fa-html5"></i>
+              </span>
+            </div>
+            <p class="lead">Built with the latest, HTML5.</p>
+          </div>
+          <div class="col-md-4 os-animation" data-animation="fadeInUp">
+            <h1>BOOTSTRAP 4</h1>
+            <div class="feature py-2">
+              <span class="fa-layers fa-3x">
+                <i class="fab fa-bootstrap"></i>
+              </span>
+            </div>
+            <p class="lead">Built with the latest, Bootstrap4.</p>
+          </div>
+          <div class="col-md-4 os-animation" data-animation="fadeInLeft">
+            <h1>SCC 3</h1>
+            <div class="feature py-2">
+              <span class="fa-layers fa-3x">
+                <i class="fab fa-css3-alt"></i>
+              </span>
+            </div>
+            <p class="lead">Built with the latest, CSS3.</p>
+          </div>
+
+          <!-- End Row Dark -->
+        </div>
+        <div class="fixed-wrap">
+          <div class="fixed-dark"></div>
+        </div>
+      </div>
+
+      <!-- End Fixed BG IMG Dark-->
+    </div>
+    <!-- End of Features Section -->
+
+    <!-- Start Blog Section -->
+    <div id="blog" class="offset">
+      <div class="row">
+        <div class="jumbotron blog m-0">
+          <div
+            class="col-12 os-animation animated fadeInUP"
+            data-animation="fadeInUp"
+          >
+            <h3 class="heading">Blog Section</h3>
+            <div class="heading-underline"></div>
+            <p><%= startingContent %></p>
+
+            <% posts.forEach(function(post){ %>
+            <h3><%= post.title %></h3>
+            <p>
+              <%= post.content.substring(0, 100) + "..." %>
+              <a href="/posts/<%= post.title %>">Read More</a>
+            </p>
+            <% }); %>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+    <!-- End Blog Section -->
 
-  <!-- Start Portfolio Section -->
-  <div id="portfolio" class="offset">
+    <!-- Start Portfolio Section -->
+    <div id="portfolio" class="offset"></div>
+    <!-- End Portfolio Section -->
 
-  </div>
-  <!-- End Portfolio Section -->
+    <!-- Start Pricing Section -->
+    <div id="pricing" class="offset"></div>
+    <!-- End of Pricing Section -->
 
-  <!-- Start Pricing Section -->
-  <div id="pricing" class="offset">
+    <!-- Start Team Section -->
+    <div id="team" class="offset"></div>
+    <!-- End Team Section -->
 
-  </div>
-  <!-- End of Pricing Section -->
+    <!-- Start Skills Section -->
+    <div id="skills" class="offset"></div>
+    <!-- End of Skills Section -->
 
-  <!-- Start Team Section -->
-  <div id="team" class="offset"></div>
-  <!-- End Team Section -->
+    <!-- Start Clients Section -->
+    <div id="clients" class="offset"></div>
+    <!-- End of Clients Section -->
 
-  <!-- Start Skills Section -->
-  <div id="skills" class="offset"></div>
-  <!-- End of Skills Section -->
+    <!-- Start Contact Section -->
+    <div id="contact" class="offset"></div>
+    <!-- End Contact Section -->
 
-  <!-- Start Clients Section -->
-  <div id="clients" class="offset"></div>
-  <!-- End of Clients Section -->
+    <!-- Top Scroll -->
 
-  <!-- Start Contact Section -->
-  <div id="contact" class="offset"></div>
-  <!-- End Contact Section -->
+    <!-- End of Top Scroll -->
 
-  <!-- Top Scroll -->
+    <!-- Script Source Files -->
 
-  <!-- End of Top Scroll -->
-
-  <!-- Script Source Files -->
-
-  <!-- Plugins.js -->
-  <script src="/js/plugins.js"></script>
-  <!-- Waypoints https://cdnjs.com/libraries/waypoints
+    <!-- Plugins.js -->
+    <script src="/js/plugins.js"></script>
+    <!-- Waypoints https://cdnjs.com/libraries/waypoints
  https://github.com/imakewebthings/waypoints -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-  <!-- Font Awesome https://fontawesome.com/  https://use.fontawesome.com/releases/v5.11.2/js/all.js -->
-  <script src="https://use.fontawesome.com/releases/v5.11.2/js/all.js"></script>
-  <!-- Lightbox Image Gallery https://cdnjs.com/libraries/lightbox2  https://lokeshdhakar.com/projects/lightbox2/ -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js"></script>
-  <!-- Owl Carousel https://cdnjs.com/libraries/OwlCarousel2
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <!-- Font Awesome https://fontawesome.com/  https://use.fontawesome.com/releases/v5.11.2/js/all.js -->
+    <script src="https://use.fontawesome.com/releases/v5.11.2/js/all.js"></script>
+    <!-- Lightbox Image Gallery https://cdnjs.com/libraries/lightbox2  https://lokeshdhakar.com/projects/lightbox2/ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js"></script>
+    <!-- Owl Carousel https://cdnjs.com/libraries/OwlCarousel2
  http://owlcarousel2.github.io/OwlCarousel2/ -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-  <!-- jQuery CounterUp https://www.jsdelivr.com/package/npm/jquery.counterup
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- jQuery CounterUp https://www.jsdelivr.com/package/npm/jquery.counterup
  https://github.com/bfintal/Counter-Up2 -->
-  <script src="https://cdn.jsdelivr.net/npm/jquery.counterup@2.1.0/jquery.counterup.min.js"></script>
-  <!-- Bootstrap Form Validator https://cdnjs.com/libraries/1000hz-bootstrap-validator -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.counterup@2.1.0/jquery.counterup.min.js"></script>
+    <!-- Bootstrap Form Validator https://cdnjs.com/libraries/1000hz-bootstrap-validator -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
 
-  <!-- End of Script Source Files -->
-</body>
-
+    <!-- End of Script Source Files -->
+  </body>
 </html>
